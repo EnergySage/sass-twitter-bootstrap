@@ -5,13 +5,21 @@
 
 // Global values
 // --------------------------------------------------
+$es_grayLighter:               #f3f3f3 !default;
+$es_grayLight:                 #ddd !default;
+$es_textColor:                 #565656 !default;
+$es_lightTextColor:            #7e7e7e !default;
+$es_headMain:                  #aca535 !default;
+
+$es_primaryButtonColor:        #e17d26 !default;
+$es_secondaryButtonColor:      #00a0df !default;
 
 
 // Grays
 // -------------------------
 $black:                 #000 !default;
 $grayDarker:            #222 !default;
-$grayDark:              #333 !default;
+$grayDark:              #7e7e7e !default;
 $gray:                  #555 !default;
 $grayLight:             #999 !default;
 $grayLighter:           #eee !default;
@@ -32,30 +40,30 @@ $purple:                #7a43b6 !default;
 
 // Scaffolding
 // -------------------------
-$bodyBackground:        $white !default;
-$textColor:             $grayDark !default;
+$bodyBackground:        $es_grayLighter !default;
+$textColor:             $es_textColor !default;
 
 
 // Links
 // -------------------------
-$linkColor:             #08c !default;
+$linkColor:             #ca6f20 !default;
 $linkColorHover:        darken($linkColor, 15%) !default;
 
 
 // Typography
 // -------------------------
-$sansFontFamily:        "Helvetica Neue", Helvetica, Arial, sans-serif !default;
-$serifFontFamily:       Georgia, "Times New Roman", Times, serif !default;
+$sansFontFamily:        "Muli", "Helvetica Neue", Helvetica, Arial, sans-serif !default;
+$serifFontFamily:       "Arvo", Georgia, "Times New Roman", Times, serif !default;
 $monoFontFamily:        Monaco, Menlo, Consolas, "Courier New", monospace !default;
 
 $baseFontSize:          14px !default;
 $baseFontFamily:        $sansFontFamily !default;
-$baseLineHeight:        20px !default;
+$baseLineHeight:        16px !default;
 $altFontFamily:         $serifFontFamily !default;
 
-$headingsFontFamily:    inherit !default; // empty to use BS default, $baseFontFamily
-$headingsFontWeight:    bold !default;    // instead of browser default, bold
-$headingsColor:         inherit !default; // empty to use BS default, $textColor
+$headingsFontFamily:    $serifFontFamily !default; // empty to use BS default, $baseFontFamily
+$headingsFontWeight:    700 !default;    // instead of browser default, bold
+$headingsColor:         $es_headMain !default; // empty to use BS default, $textColor
 
 // Tables
 // -------------------------
@@ -66,15 +74,15 @@ $tableBorder:                       #ddd !default; // table and cell border
 
 // Buttons
 // -------------------------
-$btnBackground:                     $white !default;
-$btnBackgroundHighlight:            darken($white, 10%) !default;
-$btnBorder:                         #bbb !default;
+$btnBackground:                     $es_grayLighter !default;
+$btnBackgroundHighlight:            darken($es_grayLighter, 15%) !default;
+$btnBorder:                         $es_grayLight !default;
 
-$btnPrimaryBackground:              $linkColor !default;
-$btnPrimaryBackgroundHighlight:     adjust-hue($btnPrimaryBackground, 20%) !default;
+$btnPrimaryBackground:              $es_primaryButtonColor !default;
+$btnPrimaryBackgroundHighlight:     darken($es_primaryButtonColor, 15%) !default;
 
-$btnInfoBackground:                 #5bc0de !default;
-$btnInfoBackgroundHighlight:        #2f96b4 !default;
+$btnInfoBackground:                 $es_secondaryButtonColor !default;
+$btnInfoBackgroundHighlight:        darken($es_secondaryButtonColor, 15%) !default;
 
 $btnSuccessBackground:              #62c462 !default;
 $btnSuccessBackgroundHighlight:     #51a351 !default;
@@ -254,8 +262,8 @@ $gridGutterWidth:         20px !default;
 $gridRowWidth:            ($gridColumns * $gridColumnWidth) + ($gridGutterWidth * ($gridColumns - 1)) !default;
 
 // 1200px min
-$gridColumnWidth1200:     70px !default;
-$gridGutterWidth1200:     30px !default;
+$gridColumnWidth1200:     60px !default;
+$gridGutterWidth1200:     20px !default;
 $gridRowWidth1200:        ($gridColumns * $gridColumnWidth1200) + ($gridGutterWidth1200 * ($gridColumns - 1)) !default;
 
 // 768px-979px

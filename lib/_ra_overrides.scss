@@ -1,0 +1,34 @@
+//
+// RA Buttons
+// --------------------------------------------------
+
+.btn {
+  // reset here as of 2.0.3 due to Recess property order
+  border-color: $btnBorder;
+  border-color: $btnBorder $btnBorder darken($btnBorder, 5%);
+  font-family: $serifFontFamily;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.btn-primary,
+.btn-warning,
+.btn-danger,
+.btn-success,
+.btn-info,
+.btn-inverse,
+.btn-link {
+  font-weight: 400;
+}
+
+.btn-link {
+  border-color: transparent;
+}
+
+.btn-link:hover {
+  text-decoration: none;
+}
+
+a {
+  text-decoration: none;
+}
