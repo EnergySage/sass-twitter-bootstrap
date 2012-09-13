@@ -5,8 +5,11 @@
 
 // Global values
 // --------------------------------------------------
+$es_white:                     #fff !default;
 $es_grayLighter:               #f3f3f3 !default;
 $es_grayLight:                 #ddd !default;
+$es_grayDark:                  #333 !default;
+$es_grayHighlight:             #ececec !default;
 $es_textColor:                 #565656 !default;
 $es_lightTextColor:            #7e7e7e !default;
 $es_headMain:                  #aca535 !default;
@@ -16,6 +19,12 @@ $es_secondaryButtonColor:      #00a0df !default;
 $es_tertiaryButtonColor:       #aca535 !default;
 
 $es_inputBorder:               #bababa !default;
+$es_lightBorder:               #eee !default;
+
+
+$es_error:                     #900 !default;
+$es_warning:                   #c09853 !default;
+$es_info:                      $es_primaryButtonColor !default;
 
 
 
@@ -117,12 +126,12 @@ $dropdownBorder:                rgba(0,0,0,.2) !default;
 $dropdownDividerTop:            #e5e5e5 !default;
 $dropdownDividerBottom:         $white !default;
 
-$dropdownLinkColor:             $grayDark !default;
-$dropdownLinkColorHover:        $white !default;
-$dropdownLinkColorActive:       $dropdownLinkColor !default;
+$dropdownLinkColor:             #fff !default;
+$dropdownLinkColorHover:        $es_grayLighter !default;
+$dropdownLinkColorActive:       $es_grayLighter !default;
 
-$dropdownLinkBackgroundActive:  $linkColor !default;
-$dropdownLinkBackgroundHover:   $dropdownLinkBackgroundActive !default;
+$dropdownLinkBackgroundActive:  $es_grayDark !default;
+$dropdownLinkBackgroundHover:   $es_grayDark !default;
 
 
 
@@ -169,7 +178,7 @@ $wellBackground:                  #f5f5f5 !default;
 
 // Navbar
 // -------------------------
-$navbarCollapseWidth:             979px !default;
+$navbarCollapseWidth:             768px !default;
 
 $navbarHeight:                    40px !default;
 $navbarBackgroundHighlight:       #ffffff !default;
