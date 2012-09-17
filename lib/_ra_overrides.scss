@@ -9,6 +9,10 @@
   font-family: $serifFontFamily;
   text-transform: uppercase;
   font-weight: 700;
+
+  &:hover {
+    color: darken($grayDark, 25%);
+  }
 }
 
 .btn-primary,
@@ -19,15 +23,28 @@
 .btn-inverse,
 .btn-link {
   font-weight: 400;
+
+  &:hover {
+    color: #fff;
+  }
 }
+
+
+.btn-link[disabled]:hover {
+  color: $grayDark;
+}
+
 
 .btn-link {
   border-color: transparent;
+  color: $linkColorHover;
+
+  &:hover {
+    text-decoration: none;
+    color: $linkColorHover;
+  }
 }
 
-.btn-link:hover {
-  text-decoration: none;
-}
 
 a {
   text-decoration: none;
