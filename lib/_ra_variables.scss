@@ -26,6 +26,9 @@ $es_error:                     #900 !default;
 $es_warning:                   #c09853 !default;
 $es_info:                      $es_primaryButtonColor !default;
 
+$es_linkColor:                 #ca6f20 !default;
+$es_linkColorHover:            darken($es_linkColor, 15%) !default;
+
 
 
 
@@ -60,8 +63,8 @@ $textColor:             $es_textColor !default;
 
 // Links
 // -------------------------
-$linkColor:             #ca6f20 !default;
-$linkColorHover:        darken($linkColor, 15%) !default;
+$linkColor:            $es_linkColor !default;
+$linkColorHover:       $es_linkColorHover;
 
 
 // Typography
@@ -250,7 +253,7 @@ $infoBorder:              darken(adjust-hue($infoBackground, -10), 7%) !default;
 // Tooltips and popovers
 // -------------------------
 $tooltipColor:            #fff !default;
-$tooltipBackground:       #000 !default;
+$tooltipBackground:       $es_textColor !default;
 $tooltipArrowWidth:       5px !default;
 $tooltipArrowColor:       $tooltipBackground !default;
 
