@@ -257,9 +257,9 @@ $tooltipBackground:       $es_textColor !default;
 $tooltipArrowWidth:       5px !default;
 $tooltipArrowColor:       $tooltipBackground !default;
 
-$popoverBackground:       #fff !default;
+$popoverBackground:       $es_textColor !default;
 $popoverArrowWidth:       10px !default;
-$popoverArrowColor:       #fff !default;
+$popoverArrowColor:       $es_textColor !default;
 $popoverTitleBackground:  darken($popoverBackground, 3%) !default;
 
 // Special enhancement for popovers
