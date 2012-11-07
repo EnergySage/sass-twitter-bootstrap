@@ -79,6 +79,7 @@ input[type="tel"],
 input[type="color"],
 .uneditable-input {
   display: inline-block;
+  @include box-sizing(content-box);
   height: $baseLineHeight;
   padding: 4px 6px;
   margin-bottom: 9px;
@@ -432,6 +433,7 @@ select:focus:required:invalid {
   }
   .add-on {
     display: inline-block;
+    @include box-sizing(content-box);
     width: auto;
     height: $baseLineHeight;
     min-width: 16px;
