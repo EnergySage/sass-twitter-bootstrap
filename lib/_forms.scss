@@ -79,8 +79,8 @@ input[type="tel"],
 input[type="color"],
 .uneditable-input {
   display: inline-block;
-  @include box-sizing(content-box);
-  height: $baseLineHeight;
+  @include box-sizing(border-box);
+  height: $baseLineHeight + (2 * 4px); // add top+bottom padding for border-box
   padding: 4px 6px;
   margin-bottom: 9px;
   font-size: $baseFontSize;
@@ -433,9 +433,9 @@ select:focus:required:invalid {
   }
   .add-on {
     display: inline-block;
-    @include box-sizing(content-box);
+    @include box-sizing(border-box);
     width: auto;
-    height: $baseLineHeight;
+    height: $baseLineHeight + (2 * 4px); // add top+bottom padding for border-box
     min-width: 16px;
     padding: 4px 5px;
     font-size: $baseFontSize;
