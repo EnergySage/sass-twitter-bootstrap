@@ -2864,6 +2864,9 @@ input[type="submit"].btn {
   border-color: #bce8f1;
   color: #3a87ad; }
 
+.alert-header {
+    margin: -20px 0 40px; }
+
 .alert-block {
   padding-top: 14px;
   padding-bottom: 14px; }
