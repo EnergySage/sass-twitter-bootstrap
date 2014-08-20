@@ -36,7 +36,7 @@
 .visible-desktop   { display: inherit !important; }
 
 // Tablets & small desktops only
-@media (min-width: 768px) and (max-width: 979px) {
+@media (min-width: 740px) and (max-width: 979px) {
   // Hide everything else
   .hidden-desktop    { display: inherit !important; }
   .visible-desktop   { display: none !important ; }
@@ -47,7 +47,7 @@
 }
 
 // Phones only
-@media (max-width: 767px) {
+@media (max-width: 739px) {
   // Hide everything else
   .hidden-desktop    { display: inherit !important; }
   .visible-desktop   { display: none !important; }
@@ -55,4 +55,24 @@
   .visible-phone     { display: inherit !important; } // Use inherit to restore previous behavior
   // Hide
   .hidden-phone      { display: none !important; }
+
+  .modal {
+    top: 0;
+    right: 20px;
+    left: 20px;
+    width: auto;
+    margin: 0;
+  }
+}
+// Portrait and landscape
+@media (max-width: 479px) {
+  .modal {
+    top: 0;
+    right: 10px;
+    left: 10px;
+  }
+  .modal-header .close {
+    padding: 10px;
+    margin: -10px;
+  }
 }
